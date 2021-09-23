@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack build",
-    "serve": "browser-sync start --server --serveStatic ./dist",
-    "dev": "npm run build && npm run serve && nodemon --exec npm run build && browser-sync reload",
+    "serve": "browser-sync start --server --serveStatic ./dist --browser 'Google Chrome'",
+    "dev": "npm run build && npm run serve",
+    "watch": "nodemon --exec 'npm run build'",
     "open": "npm run dev && open -a 'Google Chrome' ./dist/index.html"
   },
   "keywords": [],
