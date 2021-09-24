@@ -55,3 +55,4 @@ The `./dist` folder is in the `.gitignore` file, but this my have to change for 
 ## Todos
 
 * write a script to both watch and serve, so the project can be rebuilt on save
+* add tests with mocha
