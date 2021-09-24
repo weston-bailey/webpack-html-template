@@ -43,7 +43,7 @@ This is template code to serve up a vanilla html website using node.js and webpa
 
 > runs any tests found in the file and reruns with nodemon on file changes
 
-`npm run test-all < file name >` 
+`npm run test-all` 
 
 > runs all tests found with the filenameing convention `fileName.test.extension`
 
