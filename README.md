@@ -1,6 +1,6 @@
 # 📦 Webpack Vanilla Html Boilerplate
 
-This is template code to serve up a vanilla html website using node.js and webpack. The advantage being modules are easily support and are transpiled to vanilla js.
+This is template code to serve up a vanilla html website using node.js and webpack. The advantage being modules and all nodejs are easily supported and are transpiled to vanilla js.
 
 ## Getting started
 
