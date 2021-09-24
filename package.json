@@ -1,8 +1,8 @@
 {
-  "name": "canvas-art-webpack",
+  "name": "webpack-html-template",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "template for creating vanilla html websites using webpack and nodejs",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack build",
@@ -17,13 +17,13 @@
   "devDependencies": {
     "browser-sync": "^2.27.5",
     "css-loader": "^6.3.0",
+    "nodemon": "^2.0.13",
     "style-loader": "^3.3.0",
     "webpack": "^5.53.0",
     "webpack-cli": "^4.8.0",
     "webpack-html-plugin": "^0.1.1"
   },
   "dependencies": {
-    "html-webpack-plugin": "^5.3.2",
-    "nodemon": "^2.0.13"
+    "html-webpack-plugin": "^5.3.2"
   }
 }
