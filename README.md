@@ -8,9 +8,9 @@ This is template code to serve up a vanilla html website using node.js and webpa
 * cd into the directory and run `npm i` to download the required packages
 * use `npm run dev` to build and serve the application *NOTE: you will need re-run `npm run dev` to see your changes reflected in the browser*
   
----
-
 > `./src` contains dev code and the output of webpack can be found in `./dist`
+
+---
 
 #### The following scripts can be run from the `package.json`
 
