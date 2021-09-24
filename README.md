@@ -7,6 +7,7 @@ This is template code to serve up a vanilla html website using node.js and webpa
 * fork and clone this repo
 * cd into the directory and run `npm i` to download the required packages
 * use `npm run dev` to build and serve the application *NOTE: you will need re-run `npm run dev` to see your changes reflected in the browser*
+* use `npm run test-watch ./tests/module.test.js` to run the unit tests
   
 > `./src` contains dev code and the output of webpack can be found in `./dist`
 
@@ -34,9 +35,17 @@ This is template code to serve up a vanilla html website using node.js and webpa
 
 > opens the `./dist` folder in chrome without a live server
 
-`npm run test` 
+`npm run test < file name >` 
 
-> no testing yet
+> runs any tests found in the file
+
+`npm run test-watch < file name >` 
+
+> runs any tests found in the file and reruns with nodemon on file changes
+
+`npm run test-all < file name >` 
+
+> runs all tests found with the filenameing convention `fileName.test.extension`
 
 ## Dependencies 
 
@@ -47,6 +56,8 @@ This is template code to serve up a vanilla html website using node.js and webpa
 * [style-loader (webpack)](https://webpack.js.org/loaders/style-loader/) -- webpack plugin for loading vanilla css
 * [browser-sync](https://browsersync.io/) -- package for running local development servers of the html
 * [nodemon](https://www.npmjs.com/package/nodemon) -- file watch utility that re-runs scripts when files change
+* [mocha](https://mochajs.org/) -- for running unit tests
+* [chai](https://www.chaijs.com/) -- assertion library for testing
 
 ## Notes
 
@@ -55,4 +66,3 @@ The `./dist` folder is in the `.gitignore` file, but this my have to change for 
 ## Todos
 
 * write a script to both watch and serve, so the project can be rebuilt on save
-* add tests with mocha
