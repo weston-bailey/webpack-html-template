@@ -1,7 +1,7 @@
 const chai = require('chai')
 const assert = chai.assert
 const expect = chai.expect
-const { hello } = require('../src/scripts/module')
+const { hello } = require('../scripts/module')
 
 describe('hello world module', () => {
   const helloWorld = hello()

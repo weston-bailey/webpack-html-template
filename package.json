@@ -5,7 +5,7 @@
   "private": true,
   "scripts": {
     "test": "mocha",
-    "test-all": "npm run test */*.test.js",
+    "test-all": "npm run test ./src/*/*.test.js",
     "test-watch": "nodemon --exec npm run test",
     "build": "webpack build",
     "serve": "browser-sync start --server --serveStatic ./dist --browser 'Google Chrome'",
