@@ -1,12 +1,13 @@
-# 📦 Webpack Vanilla Html Boilerplate
+# 📦 Webpack-Babel Vanilla Html Boilerplate
 
-This is template code to serve up a vanilla html website using node.js and webpack. The advantage being modules and all nodejs features are easily supported and are transpiled to vanilla js.
+This is template code to serve up a vanilla html website using node.js and webpack and babel.  The advantage being modules and all nodejs features are easily supported and are transpiled to vanilla js. Express is used to serve the static build files.
 
 ## Getting started
 
 * fork and clone this repo
 * cd into the directory and run `npm i` to download the required packages
 * use `npm run dev` to build and serve the application *NOTE: you will need re-run `npm run dev` to see your changes reflected in the browser*
+* Navigate to `localhost:3000` to see the site
 * use `npm run test-watch ./tests/module.test.js` to run the unit tests
   
 > `./src` contains dev code and the output of webpack can be found in `./dist`
@@ -17,23 +18,15 @@ This is template code to serve up a vanilla html website using node.js and webpa
 
 `npm run build` 
 
-> uses the `webpack build` command to build the `./src` directory to the `./dist` directory.
-
-`npm run serve` 
-
-> uses the `browser-sync` plugin to serve the `./dist` directory
+>  builds the `./src` directory to the `./dist` directory.
 
 `npm run dev`
 
-> builds and serves the application
+> builds and serves the application on `localhost:3000` using the express server found in `./index.js`
 
-`npm run watch`
+`npm run start`
 
 > uses `nodemon` to rebuild the application on the on file changes
-
-`npm run open`
-
-> opens the `./dist` folder in chrome without a live server
 
 `npm run test < file name >` 
 
@@ -54,15 +47,16 @@ This is template code to serve up a vanilla html website using node.js and webpa
 * [webpack-html-plugin](https://webpack.js.org/plugins/html-webpack-plugin/) -- webpack plugin for building vanilla html sites
 * [css-loader (webpack)](https://webpack.js.org/loaders/css-loader/) -- webpack plugin for loading vanilla css
 * [style-loader (webpack)](https://webpack.js.org/loaders/style-loader/) -- webpack plugin for loading vanilla css
-* [browser-sync](https://browsersync.io/) -- package for running local development servers of the html
+* [babel](https://babeljs.io/) -- complies the js to ECMAscript 5
 * [nodemon](https://www.npmjs.com/package/nodemon) -- file watch utility that re-runs scripts when files change
 * [mocha](https://mochajs.org/) -- for running unit tests
 * [chai](https://www.chaijs.com/) -- assertion library for testing
 
 ## Notes
 
-The `./dist` folder is in the `.gitignore` file, but this my have to change for deployment.
+none right now 
 
 ## Todos
 
 * write a script to both watch and serve, so the project can be rebuilt on save
+* add testing to the express server
