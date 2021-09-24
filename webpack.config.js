@@ -1,11 +1,11 @@
 // this is the file that defines how webpack behaves
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require("html-webpack-plugin")
 
 module.exports = {
   // the main index.js file
   entry: "./src/scripts/index.js",
   // can be changed to production for deploy builds
-  mode: 'development',
+  mode: "development",
   // where to put the webpacked javascript (inside the ./dist is assumed)
   output: {
     filename: "./public/app.bundle.js" 
@@ -15,12 +15,12 @@ module.exports = {
     new HtmlWebpackPlugin({
       hash: true,
       // any values can be injected into the html
-      title: 'Custom Page Title',
-      pageHeader: 'Hello World',
+      title: "Custom Page Title",
+      pageHeader: "Hello World",
       // define the main html file
-      template: './src/index.html',
+      template: "./src/index.html",
       // where to put the webpacked html file (./dist is assumed)
-      filename: './index.html' 
+      filename: "./index.html" 
     })
   ],
   module: {
@@ -29,18 +29,23 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-          'style-loader',
-          'css-loader'
+          "style-loader",
+          "css-loader"
         ]
       },
       // defines how to use babel
       {
+      // js or jsx 
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader"
-        }
+          loader: "babel-loader",
+          options: { presets: ['@babel/preset-react', '@babel/preset-env'] }
+        },
       },
     ]
+  },
+  resolve: {
+    extensions: ['*', '.js']
   }
 }
