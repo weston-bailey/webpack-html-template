@@ -5,3 +5,7 @@ require('../styles/index.css')
 
 console.log('hello from the index')
 console.log(hello())
+
+// regular DOM still works!
+const myBody = document.querySelector('body')
+console.log(myBody)
