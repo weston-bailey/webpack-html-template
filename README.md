@@ -6,7 +6,7 @@ This is template code to serve up a vanilla html website using node.js and webpa
 
 * fork and clone this repo
 * cd into the directory and run `npm i` to download the required packages
-* use `npm run dev` to build and serve the application *NOTE: you will need re-run `npm run dev` to see your changes reflected in the browser
+* use `npm run dev` to build and serve the application *NOTE: you will need re-run `npm run dev` to see your changes reflected in the browser*
   
 ---
 

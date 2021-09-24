@@ -13,7 +13,7 @@ module.exports = {
       myPageHeader: 'Hello World',
       template: './src/index.html',
       filename: './index.html' 
-  })
+    })
   ],
   module: {
     rules: [
