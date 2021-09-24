@@ -52,6 +52,7 @@ This is template code to serve up a vanilla html website using node.js and webpa
 * [express](https://expressjs.com/) -- to serve the bundled static files from the `./dist` directory
 * [mocha](https://mochajs.org/) -- for running unit tests
 * [chai](https://www.chaijs.com/) -- assertion library for testing
+* [supertest](https://www.npmjs.com/package/supertest) -- used for testing express routes
 
 ## Notes
 
