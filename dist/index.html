@@ -1,13 +1,14 @@
+
 <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8">
     <!-- using squiddies to inject html from the webpack.config.js file  -->
-    <title>Custom Page Title</title>
-  <script defer src="./public/app.bundle.js?4a8126a2671194722aa1"></script></head>
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
 
   <body>
-    <h1>Hello World</h1>
+    <h1> <%= htmlWebpackPlugin.options.PageHeader %> </h1>
     <h3>Hello World</h3>
   </body>
 </html>

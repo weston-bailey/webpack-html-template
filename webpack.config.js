@@ -16,7 +16,7 @@ module.exports = {
       hash: true,
       // any values can be injected into the html
       title: 'Custom Page Title',
-      PageHeader: 'Hello World',
+      pageHeader: 'Hello World',
       // define the main html file
       template: './src/index.html',
       // where to put the webpacked html file (./dist is assumed)

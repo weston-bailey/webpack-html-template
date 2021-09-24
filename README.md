@@ -49,6 +49,7 @@ This is template code to serve up a vanilla html website using node.js and webpa
 * [style-loader (webpack)](https://webpack.js.org/loaders/style-loader/) -- webpack plugin for loading vanilla css
 * [babel](https://babeljs.io/) -- complies the js to ECMAscript 5
 * [nodemon](https://www.npmjs.com/package/nodemon) -- file watch utility that re-runs scripts when files change
+* [express](https://expressjs.com/) -- to serve the bundled static files from the `./dist` directory
 * [mocha](https://mochajs.org/) -- for running unit tests
 * [chai](https://www.chaijs.com/) -- assertion library for testing
 
