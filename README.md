@@ -14,27 +14,27 @@ This is template code to serve up a vanilla html website using node.js and webpa
 
 #### The following scripts can be run from the `package.json`
 
-* `npm run build` 
+`npm run build` 
 
 > uses the `webpack build` command to build the `./src` directory to the `./dist` directory.
 
-* `npm run serve` 
+`npm run serve` 
 
 > uses the `browser-sync` plugin to serve the `./dist` directory
 
-* `npm run dev`
+`npm run dev`
 
 > builds and serves the application
 
-* `npm run watch`
+`npm run watch`
 
 > uses `nodemon` to rebuild the application on the on file changes
 
-* `npm run open`
+`npm run open`
 
 > opens the `./dist` folder in chrome without a live server
 
-* `npm run test` 
+`npm run test` 
 
 > no testing yet
 
