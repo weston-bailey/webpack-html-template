@@ -9,6 +9,26 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/scripts/index.js":
+/*!******************************!*\
+  !*** ./src/scripts/index.js ***!
+  \******************************/
+/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
+
+eval("// modules can be used \nvar _require = __webpack_require__(/*! ./module */ \"./src/scripts/module.js\"),\n    hello = _require.hello; // css file just needs to be required in the main js\n\n\n__webpack_require__(/*! ../styles/index.css */ \"./src/styles/index.css\");\n\nconsole.log('hello from the index');\nconsole.log(hello()); // regular DOM still works!\n\nvar myBody = document.querySelector('body');\nconsole.log(myBody);\n\n//# sourceURL=webpack://webpack-html-template/./src/scripts/index.js?");
+
+/***/ }),
+
+/***/ "./src/scripts/module.js":
+/*!*******************************!*\
+  !*** ./src/scripts/module.js ***!
+  \*******************************/
+/***/ ((module) => {
+
+eval("function hello() {\n  return 'hello from a module';\n}\n\nmodule.exports = {\n  hello: hello\n};\n\n//# sourceURL=webpack://webpack-html-template/./src/scripts/module.js?");
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./src/styles/index.css":
 /*!********************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./src/styles/index.css ***!
@@ -116,26 +136,6 @@ eval("\n\n/* istanbul ignore next  */\nfunction apply(styleElement, options, obj
 
 "use strict";
 eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, styleElement) {\n  if (styleElement.styleSheet) {\n    styleElement.styleSheet.cssText = css;\n  } else {\n    while (styleElement.firstChild) {\n      styleElement.removeChild(styleElement.firstChild);\n    }\n\n    styleElement.appendChild(document.createTextNode(css));\n  }\n}\n\nmodule.exports = styleTagTransform;\n\n//# sourceURL=webpack://webpack-html-template/./node_modules/style-loader/dist/runtime/styleTagTransform.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/index.js":
-/*!******************************!*\
-  !*** ./src/scripts/index.js ***!
-  \******************************/
-/***/ ((__unused_webpack_module, __unused_webpack_exports, __webpack_require__) => {
-
-eval("// modules can be used \nconst { hello } = __webpack_require__(/*! ./module */ \"./src/scripts/module.js\")\n// css file just needs to be required in the main js\n__webpack_require__(/*! ../styles/index.css */ \"./src/styles/index.css\")\n\nconsole.log('hello from the index')\nconsole.log(hello())\n\n// regular DOM still works!\nconst myBody = document.querySelector('body')\nconsole.log(myBody)\n\n\n//# sourceURL=webpack://webpack-html-template/./src/scripts/index.js?");
-
-/***/ }),
-
-/***/ "./src/scripts/module.js":
-/*!*******************************!*\
-  !*** ./src/scripts/module.js ***!
-  \*******************************/
-/***/ ((module) => {
-
-eval("function hello() {\n  return 'hello from a module'\n}\n\nmodule.exports = {\n hello\n}\n\n//# sourceURL=webpack://webpack-html-template/./src/scripts/module.js?");
 
 /***/ })
 

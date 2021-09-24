@@ -25,13 +25,22 @@ module.exports = {
   ],
   module: {
     rules: [
+      // defines how to use the css webpack modules
       {
         test: /\.css$/,
         use: [
           'style-loader',
           'css-loader'
         ]
-      }
+      },
+      // defines how to use babel
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: {
+            loader: "babel-loader"
+        }
+      },
     ]
   }
 }
