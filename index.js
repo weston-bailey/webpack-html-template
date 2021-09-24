@@ -18,9 +18,9 @@ app.use((err, req, res, next) => {
   res.status(500).send('internal server error')
 })
 
-const server = app.listen(app.get('port'), err => {
+app.listen(app.get('port'), err => {
   if (err) return console.log(err)
   console.log(`listening to the smooth sounds of port ${app.get('port')} in the morning`)
 })
 
-module.exports = { server }
+module.exports = { app }
