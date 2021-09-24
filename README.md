@@ -16,17 +16,17 @@ This is template code to serve up a vanilla html website using node.js and webpa
 
 #### The following scripts can be run from the `package.json`
 
-`npm run build` 
-
->  builds the `./src` directory to the `./dist` directory.
-
 `npm run dev`
 
-> builds and serves the application on `localhost:3000` using the express server found in `./index.js`
+> runs a development build and serves the application on `localhost:3000` using the express server found in `./index.js`
 
 `npm run start`
 
 > uses `nodemon` to rebuild the application on the on file changes
+
+`npm run build` 
+
+>  runs a production build of the `./src` directory to the `./dist` directory.
 
 `npm run test < file name >` 
 
