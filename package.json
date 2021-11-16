@@ -6,9 +6,8 @@
   "scripts": {
     "test": "mocha",
     "test-all": "mocha */*.test.js",
-    "test-watch": "nodemon --exec npm run test",
     "dev": "webpack build && node index.js",
-    "start": "nodemon",
+    "start": "webpack-dev-server --mode development --port 3000",
     "build": "webpack --mode production"
   },
   "keywords": [],
@@ -26,11 +25,10 @@
     "style-loader": "^3.3.0",
     "webpack": "^5.53.0",
     "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.5.0",
     "webpack-html-plugin": "^0.1.1"
   },
   "dependencies": {
-    "express": "^4.17.1",
-    "html-webpack-plugin": "^5.3.2",
-    "supertest": "^6.1.6"
+    "html-webpack-plugin": "^5.3.2"
   }
 }
