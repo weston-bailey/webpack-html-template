@@ -9,8 +9,8 @@ This is template code to serve up a vanilla html website using node.js and webpa
 * use `npm run start` to build and serve the application 
 * Navigate to `localhost:3000` to see the site
 * use `npm run test-all` to run all tests in the `./tests` folder
-  
-> `./src` contains dev code and the output of webpack can be found in `./dist`
+
+> `./src` contains dev code and the output of webpack can be found in `./dist`. Take note that the Procfile runs `npm run build && node index.js` -- the build folder (`./dist`) has been gitignored
 
 ---
 
@@ -31,8 +31,6 @@ This is template code to serve up a vanilla html website using node.js and webpa
 `npm run test-all` 
 
 > runs all tests found with the filenameing convention `fileName.test.extension`
-
-> take note that the Procfile runs `npm run build && node index.js` -- the build folder (`./dist`) has been gitignored
 
 ## Dependencies 
 
