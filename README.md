@@ -44,8 +44,9 @@ This is template code to serve up a vanilla html website using node.js and webpa
 * [mocha](https://mochajs.org/) -- for running unit tests
 * [chai](https://www.chaijs.com/) -- assertion library for testing
 
-## Notes
-
-none right now 
-
 ## Todos
+
+* [x] gitignore `./dist`
+* [x] get rid of express and related dependacies
+* [ ] add scss loader to webpack
+* [ ] be able to add an arbitrary amount of html files
