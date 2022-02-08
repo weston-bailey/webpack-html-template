@@ -32,6 +32,8 @@ This is template code to serve up a vanilla html website using node.js and webpa
 
 > runs all tests found with the filenameing convention `fileName.test.extension`
 
+> take note that the Procfile runs `npm run build && node index.js` -- the build folder (`./dist`) has been gitignored
+
 ## Dependencies 
 
 * [webpack](https://webpack.js.org/) -- used to bundle the website together
