@@ -2,7 +2,8 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin")
 // const { readdirSync, lstatSync } = require('fs')
 
-const htmlFiles = []
+// TODO: recursively import all found html files
+// const htmlFiles = []
 
 // // recurse throught folders, add html files to array, skip the main js
 // function getFiles(dir) {
@@ -71,6 +72,16 @@ module.exports = {
           options: { presets: ['@babel/preset-react', '@babel/preset-env'] }
         },
       },
+      // image loader
+      {
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+      },
+      // json loader TODO: fix
+      {
+        test: /\.json$/,
+        loader: 'json-loader'
+      }
     ]
   },
   resolve: {
