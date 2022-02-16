@@ -1,8 +1,9 @@
 // this is the file that defines how webpack behaves
 const HtmlWebpackPlugin = require("html-webpack-plugin")
+
+// // TODO: recursively import all found html files
 // const { readdirSync, lstatSync } = require('fs')
 
-// TODO: recursively import all found html files
 // const htmlFiles = []
 
 // // recurse throught folders, add html files to array, skip the main js
@@ -51,7 +52,7 @@ module.exports = {
       filename: "./index.html",
       chunks: ['main']
     })
-  ]/* .concat(htmlPlugins) */,
+  ] /* .concat(htmlPlugins) */,
   module: {
     rules: [
       // defines how to use the css webpack modules
