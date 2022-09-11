@@ -6,7 +6,6 @@
   "scripts": {
     "test": "mocha",
     "test-all": "mocha */*.test.js",
-    "dev": "webpack build && node index.js",
     "start": "webpack-dev-server --mode development --port 3000",
     "build": "webpack --mode production"
   },

@@ -12,7 +12,7 @@ It is possible to either build a SPA or use multiple html files.
 * Navigate to `localhost:3000` to see the site
 * use `npm run test-all` to run all tests in the `./tests` folder
 
-> `./src` contains dev code and the output of webpack can be found in `./dist`. Take note that the Procfile runs `npm run build && node index.js` -- the build folder (`./dist`) has been gitignored
+> `./src` contains dev code and the output of webpack can be found in `./dist`
 
 ---
 
@@ -42,7 +42,6 @@ It is possible to either build a SPA or use multiple html files.
 * [css-loader (webpack)](https://webpack.js.org/loaders/css-loader/) -- webpack plugin for loading vanilla css
 * [style-loader (webpack)](https://webpack.js.org/loaders/style-loader/) -- webpack plugin for loading vanilla css
 * [babel](https://babeljs.io/) -- complies the js to ECMAscript 5
-* [nodemon](https://www.npmjs.com/package/nodemon) -- file watch utility that re-runs scripts when files change
 * [mocha](https://mochajs.org/) -- for running unit tests
 * [chai](https://www.chaijs.com/) -- assertion library for testing
 
